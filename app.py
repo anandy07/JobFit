@@ -7,7 +7,7 @@ import fitz  # PyMuPDF
 import google.generativeai as genai
 
 # ✅ Configure Gemini API with Streamlit Secrets
-genai.configure(api_key=st.secrets[""GOOGLE_API_KEY""])
+genai.configure(api_key=st.secrets["GOOGLE_API_KEY""])
 
 # Convert uploaded PDF to image and then to base64
 def input_pdf_setup(uploaded_file):
